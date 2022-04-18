@@ -1,0 +1,15 @@
+server:
+  port: 8086
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/AcsCtl?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: zjh1314520
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false
+  mvc:
+    static-path-pattern: /resources/**
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
